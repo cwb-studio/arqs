@@ -5,6 +5,13 @@
   width: 100% !important;
 }
 
+.quarto-title-block .subtitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #D3AF37;
+  letter-spacing: 0.3px;
+}
+
 .style-section {
   border: 1px solid #e1e1e1;
   padding: 30px;
