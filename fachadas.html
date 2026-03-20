@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2026-03-19">
+
+<title>Guia de Estilos Arquitetônicos para Corretores – Guia de Estilos</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-156c5022be28fb4ff5bb7c7b02de766a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Guia de Estilos</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./interiores.html"> 
+<span class="menu-text">Interiores</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./fachadas.html" aria-current="page"> 
+<span class="menu-text">Fachadas</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#a-herança-europeia" id="toc-a-herança-europeia" class="nav-link active" data-scroll-target="#a-herança-europeia">A Herança Europeia</a>
+  <ul class="collapse">
+  <li><a href="#estilos-históricos" id="toc-estilos-históricos" class="nav-link" data-scroll-target="#estilos-históricos"><em>Estilos Históricos</em></a>
+  <ul class="collapse">
+  <li><a href="#clássico" id="toc-clássico" class="nav-link" data-scroll-target="#clássico">Clássico</a></li>
+  <li><a href="#barroco-rococó-e-flamboyant" id="toc-barroco-rococó-e-flamboyant" class="nav-link" data-scroll-target="#barroco-rococó-e-flamboyant">Barroco, Rococó e Flamboyant</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#a-evolução-da-forma" id="toc-a-evolução-da-forma" class="nav-link" data-scroll-target="#a-evolução-da-forma">A Evolução da Forma</a>
+  <ul class="collapse">
+  <li><a href="#modernidade-e-design" id="toc-modernidade-e-design" class="nav-link" data-scroll-target="#modernidade-e-design"><em>Modernidade e Design</em></a>
+  <ul class="collapse">
+  <li><a href="#art-nouveau" id="toc-art-nouveau" class="nav-link" data-scroll-target="#art-nouveau">Art Nouveau</a></li>
+  <li><a href="#art-déco" id="toc-art-déco" class="nav-link" data-scroll-target="#art-déco">Art Déco</a></li>
+  <li><a href="#modernismo" id="toc-modernismo" class="nav-link" data-scroll-target="#modernismo">Modernismo</a></li>
+  <li><a href="#brutalismo" id="toc-brutalismo" class="nav-link" data-scroll-target="#brutalismo">Brutalismo</a></li>
+  <li><a href="#minimalismo" id="toc-minimalismo" class="nav-link" data-scroll-target="#minimalismo">Minimalismo</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#estilos-de-habitar" id="toc-estilos-de-habitar" class="nav-link" data-scroll-target="#estilos-de-habitar">Estilos de Habitar</a>
+  <ul class="collapse">
+  <li><a href="#lifestyle" id="toc-lifestyle" class="nav-link" data-scroll-target="#lifestyle"><em>Lifestyle</em></a>
+  <ul class="collapse">
+  <li><a href="#industrial---loft-style" id="toc-industrial---loft-style" class="nav-link" data-scroll-target="#industrial---loft-style">Industrial - <em>Loft Style</em></a></li>
+  <li><a href="#mediterrâneo" id="toc-mediterrâneo" class="nav-link" data-scroll-target="#mediterrâneo">Mediterrâneo</a></li>
+  <li><a href="#escandinavo" id="toc-escandinavo" class="nav-link" data-scroll-target="#escandinavo">Escandinavo</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#releituras-contemporâneas" id="toc-releituras-contemporâneas" class="nav-link" data-scroll-target="#releituras-contemporâneas">Releituras Contemporâneas</a>
+  <ul class="collapse">
+  <li><a href="#síntese-e-reconfiguração" id="toc-síntese-e-reconfiguração" class="nav-link" data-scroll-target="#síntese-e-reconfiguração"><em>Síntese e Reconfiguração</em></a>
+  <ul class="collapse">
+  <li><a href="#neoclássico-contemporâneo" id="toc-neoclássico-contemporâneo" class="nav-link" data-scroll-target="#neoclássico-contemporâneo">Neoclássico Contemporâneo</a></li>
+  <li><a href="#pós-modernismo" id="toc-pós-modernismo" class="nav-link" data-scroll-target="#pós-modernismo">Pós-Modernismo</a></li>
+  <li><a href="#tendências-contemporâneas" id="toc-tendências-contemporâneas" class="nav-link" data-scroll-target="#tendências-contemporâneas">Tendências Contemporâneas</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Guia de Estilos Arquitetônicos para Corretores</h1>
+<p class="subtitle lead">Referência de Fachadas</p>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-right">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 19, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="o-que-observar-na-fachada" class="level4">
+<h4 class="anchored" data-anchor-id="o-que-observar-na-fachada">O que observar na Fachada</h4>
+<p>A fachada é o “cartão de visitas” e o principal fator de valorização imediata do imóvel. Ao analisar a volumetria externa, observe:</p>
+<ul>
+<li><strong>Ritmo das Aberturas:</strong> Note se as janelas seguem um padrão rígido e simétrico ou se são vãos livres e assimétricos.</li>
+<li><strong>Materialidade Externa:</strong> Identifique o uso de texturas (pedra, madeira, concreto) e como elas reagem à luz solar.</li>
+<li><strong>Silhueta e Topo:</strong> Observe o fechamento do prédio (platibandas retas, telhados aparentes ou coroamentos ornamentados).</li>
+<li><strong>Integração com o Entorno:</strong> Como o térreo se relaciona com a calçada e o paisagismo.</li>
+</ul>
+<hr>
+</section>
+<section id="a-herança-europeia" class="level1">
+<h1>A Herança Europeia</h1>
+<section id="estilos-históricos" class="level2">
+<h2 class="anchored" data-anchor-id="estilos-históricos"><em>Estilos Históricos</em></h2>
+<section id="clássico" class="level3">
+<h3 class="anchored" data-anchor-id="clássico">Clássico</h3>
+<div class="style-section">
+<p><span class="category-tag">A Fundação Greco-Romana</span> <strong>Descrição da Fachada:</strong> Base purista pautada pela simetria absoluta e proporção matemática. Transmite autoridade e permanência institucional. <strong>Identificadores Chave:</strong> Ordens literais (Dórica/Coríntia), frontões triangulares monumentais e uso extensivo de pedra maciça ou mármore.</p>
+<div class="image-container">
+<p><a href="fachadas/classico.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="fachadas/classico.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Observe a densidade e o peso da pedra. A descrição deve focar na imponência das colunas e na perfeição matemática da fachada, que cria um ar de solenidade inabalável.</p>
+</div>
+</div>
+</section>
+<section id="barroco-rococó-e-flamboyant" class="level3">
+<h3 class="anchored" data-anchor-id="barroco-rococó-e-flamboyant">Barroco, Rococó e Flamboyant</h3>
+<div class="style-section">
+<p><span class="category-tag">O Drama, a Graça e a Ascensão</span> <strong>Descrição da Fachada:</strong> Uma trilogia de estilos de alta densidade ornamental. O segredo para identificar está no “peso” visual e na direção das linhas: o Barroco é denso e curvo; o Rococó é leve e floral; o Flamboyant é vertical e rendilhado.</p>
+<p><strong>Identificadores de Comparação:</strong></p>
+<ul>
+<li><strong>Barroco (O Peso):</strong> Observe fachadas que “entram e saem” (volumes côncavos e convexos). O foco é o drama das sombras profundas e colunas que parecem retorcidas ou em movimento.</li>
+<li><strong>Rococó (A Delicadeza):</strong> Identifique ornamentos menores, assimétricos e mais finos. No lugar do drama, entram conchas (<em>rocaille</em>), flores e uma aparência mais festiva, clara e graciosa.</li>
+<li><strong>Flamboyant (A Chama):</strong> Procure pelo rendilhado de pedra. Arcos muito agudos e detalhes que sobem verticalmente como se fossem labaredas de fogo esculpidas na própria estrutura.</li>
+</ul>
+<div class="image-container">
+<p><a href="fachadas/barroco_rococo_flamboyant.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="fachadas/barroco_rococo_flamboyant.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Como treinar o olhar:</strong> No Barroco, o prédio transmite “potência e movimento”. No Rococó, transmite “detalhamento e leveza”. No Flamboyant, transmite “ascensão e filigrana”.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+<section id="a-evolução-da-forma" class="level1">
+<h1>A Evolução da Forma</h1>
+<section id="modernidade-e-design" class="level2">
+<h2 class="anchored" data-anchor-id="modernidade-e-design"><em>Modernidade e Design</em></h2>
+<section id="art-nouveau" class="level3">
+<h3 class="anchored" data-anchor-id="art-nouveau">Art Nouveau</h3>
+<div class="style-section">
+<p><span class="category-tag">A Fluidez Biológica</span> <strong>Descrição da Fachada:</strong> Ruptura total com a tradição em favor de formas biológicas, curvas e sinuosas que mimetizam a natureza. <strong>Identificadores Chave:</strong> Linhas em chicote, vitrais botânicos integrados e ferro batido orgânico nas sacadas.</p>
+<div class="image-container">
+<p><a href="fachadas/art_nouveau1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="fachadas/art_nouveau1.jpg" class="img-fluid"></a></p>
+</div>
+<div class="image-container">
+<p><a href="fachadas/art_nouveau2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="fachadas/art_nouveau2.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Identifique a ausência de linhas retas. A descrição deve focar na fluidez da fachada, onde os elementos parecem crescer e se entrelaçar como organismos vivos sobre a pedra.</p>
+</div>
+</div>
+</section>
+<section id="art-déco" class="level3">
+<h3 class="anchored" data-anchor-id="art-déco">Art Déco</h3>
+<div class="style-section">
+<p><span class="category-tag">O Glamour Geométrico</span> <strong>Descrição da Fachada:</strong> Estética industrial glamourosa, definida pela precisão geométrica, verticalidade e materiais polidos. <strong>Identificadores Chave:</strong> Ziguezagues, raios de sol, metais (latão e aço) e escalonamentos (<em>setbacks</em>) rítmicos.</p>
+<div class="image-container">
+<p><a href="fachadas/art_deco1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="fachadas/art_deco1.jpg" class="img-fluid"></a></p>
+</div>
+<div class="image-container">
+<p><a href="fachadas/art_deco2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="fachadas/art_deco2.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Observe o rigor da simetria e o brilho das superfícies. Descreva a modernidade das formas escalonadas e o uso de padrões que conferem sofisticação urbana e dinamismo.</p>
+</div>
+</div>
+</section>
+<section id="modernismo" class="level3">
+<h3 class="anchored" data-anchor-id="modernismo">Modernismo</h3>
+<div class="style-section">
+<p><span class="category-tag">A Função Estrutural</span> <strong>Descrição da Fachada:</strong> Purismo funcional que elimina o ornamento. A beleza reside na geometria da estrutura e na transparência. <strong>Identificadores Chave:</strong> Pilotis no térreo, janelas em fita e integração total através de grandes fachadas de vidro.</p>
+<div class="image-container">
+<p><a href="fachadas/modernismo.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="fachadas/modernismo.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Foque na transparência e na leveza. Note como a estrutura se torna o próprio design e descreva a integração entre o interior e o exterior permitida pelos panos de vidro.</p>
+</div>
+</div>
+</section>
+<section id="brutalismo" class="level3">
+<h3 class="anchored" data-anchor-id="brutalismo">Brutalismo</h3>
+<div class="style-section">
+<p><span class="category-tag">O Concreto Radical</span> <strong>Descrição da Fachada:</strong> Honestidade radical, exibindo a força do concreto em sua forma pura e monumental. <strong>Identificadores Chave:</strong> Concreto aparente (<em>béton brut</em>) com marcas de fôrma e volumetria pesada e escultural.</p>
+<div class="image-container">
+<p><a href="fachadas/brutalismo.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="fachadas/brutalismo.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Priorize a descrição tátil e sólida. Observe a força das formas pesadas e como a luz incide sobre a textura áspera do concreto, criando uma estética de crueza arquitetônica.</p>
+</div>
+</div>
+</section>
+<section id="minimalismo" class="level3">
+<h3 class="anchored" data-anchor-id="minimalismo">Minimalismo</h3>
+<div class="style-section">
+<p><span class="category-tag">O Purismo da Luz</span> <strong>Descrição da Fachada:</strong> Redução absoluta aos elementos essenciais para valorizar a volumetria pura e o vazio. <strong>Identificadores Chave:</strong> Paleta monocromática, vãos livres monumentais e superfícies contínuas sem juntas visíveis.</p>
+<div class="image-container">
+<p><a href="fachadas/minimalismo.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="fachadas/minimalismo.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Note o “silêncio visual” do edifício. A descrição deve focar na precisão dos encontros entre materiais e na forma como a luz natural desenha a estrutura livre de adornos.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+<section id="estilos-de-habitar" class="level1">
+<h1>Estilos de Habitar</h1>
+<section id="lifestyle" class="level2">
+<h2 class="anchored" data-anchor-id="lifestyle"><em>Lifestyle</em></h2>
+<section id="industrial---loft-style" class="level3">
+<h3 class="anchored" data-anchor-id="industrial---loft-style">Industrial - <em>Loft Style</em></h3>
+<div class="style-section">
+<p><span class="category-tag">A Estética de Nova York</span> <strong>Descrição da Fachada:</strong> Reinterpretação de espaços fabris, valorizando materiais industriais e o aspecto funcional. <strong>Identificadores Chave:</strong> Tijolo aparente, grandes janelas de ferro com grid e elementos metálicos pretos expostos.</p>
+<div class="image-container">
+<p><a href="fachadas/industrial1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="fachadas/industrial1.jpg" class="img-fluid"></a></p>
+</div>
+<div class="image-container">
+<p><a href="fachadas/industrial2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="fachadas/industrial2.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Observe o caráter bruto e cosmopolita. Ao descrever, destaque as amplas aberturas e a exposição deliberada dos materiais que remetem ao lifestyle urbano dos grandes centros.</p>
+</div>
+</div>
+</section>
+<section id="mediterrâneo" class="level3">
+<h3 class="anchored" data-anchor-id="mediterrâneo">Mediterrâneo</h3>
+<div class="style-section">
+<p><span class="category-tag">O Rústico Solar</span> <strong>Descrição da Fachada:</strong> Linguagem solar focada no conforto térmico e em materiais naturais com texturas artesanais. <strong>Identificadores Chave:</strong> Estuque branco texturizado, arcos elegantes e integração com pátios e vegetação mediterrânea.</p>
+<div class="image-container">
+<p><a href="fachadas/mediterrâneo1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="fachadas/mediterrâneo1.jpg" class="img-fluid"></a></p>
+</div>
+<div class="image-container">
+<p><a href="fachadas/mediterrâneo2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-13"><img src="fachadas/mediterrâneo2.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Identifique o contraste entre o estuque claro e a sombra dos arcos. Foque na descrição da luz e na fluidez da fachada integrada ao paisagismo solar.</p>
+</div>
+</div>
+</section>
+<section id="escandinavo" class="level3">
+<h3 class="anchored" data-anchor-id="escandinavo">Escandinavo</h3>
+<div class="style-section">
+<p><span class="category-tag">O Bem-Estar Hygge</span> <strong>Descrição da Fachada:</strong> Foco na funcionalidade e no conforto visual através de tons claros, madeira e integração com a natureza. <strong>Identificadores Chave:</strong> Madeira clara (carvalho/pinho), fachadas em tons neutros e grandes janelas para capturar luz natural.</p>
+<div class="image-container">
+<p><a href="fachadas/escandinavo1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-14"><img src="fachadas/escandinavo1.jpg" class="img-fluid"></a></p>
+</div>
+<div class="image-container">
+<p><a href="fachadas/escandinavo2.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-15"><img src="fachadas/escandinavo2.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Note a sobriedade e a serenidade da fachada. Descreva a predominância da madeira clara e a paleta neutra que busca maximizar a luz e criar um ambiente acolhedor.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+</section>
+<section id="releituras-contemporâneas" class="level1">
+<h1>Releituras Contemporâneas</h1>
+<section id="síntese-e-reconfiguração" class="level2">
+<h2 class="anchored" data-anchor-id="síntese-e-reconfiguração"><em>Síntese e Reconfiguração</em></h2>
+<section id="neoclássico-contemporâneo" class="level3">
+<h3 class="anchored" data-anchor-id="neoclássico-contemporâneo">Neoclássico Contemporâneo</h3>
+<div class="style-section">
+<p><span class="category-tag">O Mercado de Luxo Atemporal</span> <strong>Descrição da Fachada:</strong> Releitura simplificada dos ideais clássicos, focada na perenidade, simetria e sobriedade de alto padrão. <strong>Identificadores Chave:</strong> Simetria rigorosa, colunas esguias simplificadas, molduras sutis e cores neutras.</p>
+<div class="image-container">
+<p><a href="fachadas/neoclassico.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-16"><img src="fachadas/neoclassico.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Observe a “limpeza” ornamental em relação ao Clássico histórico. Foque na pureza das superfícies, na precisão da simetria e no prestígio que a estética transmite.</p>
+</div>
+</div>
+</section>
+<section id="pós-modernismo" class="level3">
+<h3 class="anchored" data-anchor-id="pós-modernismo">Pós-Modernismo</h3>
+<div class="style-section">
+<p><span class="category-tag">O Ecletismo Lúdico</span> <strong>Descrição da Fachada:</strong> Reação ao modernismo que utiliza elementos históricos de forma fragmentada, irônica e decorativa. <strong>Identificadores Chave:</strong> Mistura de cores pastéis, arcos ornamentais não-estruturais e reinterpretações geométricas de frontões.</p>
+<div class="image-container">
+<p><a href="fachadas/pos_modernismo.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-17"><img src="fachadas/pos_modernismo.jpg" class="img-fluid"></a></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Identifique o caráter lúdico e a mistura de referências. Foque na descrição das cores e na forma como elementos tradicionais são aplicados de maneira exagerada ou ousada.</p>
+</div>
+</div>
+</section>
+<section id="tendências-contemporâneas" class="level3">
+<h3 class="anchored" data-anchor-id="tendências-contemporâneas">Tendências Contemporâneas</h3>
+<div class="style-section">
+<p><span class="category-tag">Simbiose Natureza–Tecnologia</span> <strong>Descrição da Fachada:</strong>Linguagem arquitetônica contemporânea que integra tecnologia avançada e sistemas naturais. A fachada atua como um sistema híbrido, incorporando vegetação como elemento estrutural e funcional. <strong>Identificadores Chave:</strong> Jardins verticais integrados, geometrias fluidas, materiais eco-eficientes e estratégias passivas de desempenho ambiental.</p>
+<div class="image-container">
+<p><span class="category-tag">Contemporâneo Biofílico</span> <img src="fachadas/contemporaneo_biofilico.jpg" class="img-fluid"></p>
+</div>
+<div class="image-container">
+<p><span class="category-tag">Contemporâneo High-Tech</span> <img src="fachadas/contemporaneo_hightech.jpg" class="img-fluid"></p>
+</div>
+<div class="image-container">
+<p><span class="category-tag">Contemporâneo Desconstrutivista</span> <img src="fachadas/contemporaneo_desconstrutivista.jpg" class="img-fluid"></p>
+</div>
+<div class="broker-tip">
+<p><strong>Dica:</strong> Note a integração entre o construído e o biológico. Ao descrever, enfatize a presença da vegetação como elemento estrutural e a tecnologia aplicada ao bem-estar.</p>
+</div>
+</div>
+<hr>
+<p><strong>Resumo Final:</strong> Utilize estas referências para valorizar o produto imobiliário. Entender a fachada permite que você venda não apenas um endereço, mas uma identidade cultural e um valor arquitetônico superior.</p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+
+
+</body></html>
